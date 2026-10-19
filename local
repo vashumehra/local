@@ -109,4 +109,394 @@
     }
 
     .hero h2 {
-      font-size: 28px
+      font-size: 28px;
+      margin-bottom: 10px;
+    }
+
+    .hero p {
+      max-width: 800px;
+      margin: 0 auto 20px;
+      font-size: 15px;
+      opacity: 0.9;
+    }
+
+    /* Counter Badges */
+    .metrics {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      flex-wrap: wrap;
+      margin-top: 15px;
+    }
+
+    .badge {
+      background: rgba(255, 255, 255, 0.15);
+      border: 1px solid rgba(255, 255, 255, 0.25);
+      border-radius: 8px;
+      padding: 10px 20px;
+      min-width: 120px;
+    }
+
+    .badge strong {
+      display: block;
+      font-size: 20px;
+    }
+
+    /* Main Container */
+    .wrapper {
+      max-width: 1300px;
+      margin: 30px auto;
+      padding: 0 20px;
+    }
+
+    /* Category Tabs */
+    .tabs-header {
+      margin-bottom: 20px;
+    }
+
+    .tabs-header h3 {
+      font-size: 18px;
+      margin-bottom: 12px;
+      color: var(--primary-color);
+    }
+
+    .tab-list {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+
+    .tab-item {
+      padding: 10px 18px;
+      background: #fff;
+      border: 1px solid var(--border-color);
+      border-radius: 6px;
+      cursor: pointer;
+      font-size: 14px;
+      font-weight: 600;
+      color: var(--text-muted);
+      transition: all 0.2s;
+    }
+
+    .tab-item:hover, .tab-item.active {
+      background: var(--secondary-color);
+      color: #fff;
+      border-color: var(--secondary-color);
+      box-shadow: 0 2px 6px rgba(0, 102, 204, 0.3);
+    }
+
+    /* Form Container */
+    .crm-section {
+      background: var(--card-bg);
+      border-radius: 10px;
+      border: 1px solid var(--border-color);
+      padding: 25px;
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+    }
+
+    .crm-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 15px;
+      border-bottom: 2px solid var(--border-color);
+      padding-bottom: 10px;
+    }
+
+    .crm-header h4 {
+      font-size: 18px;
+      color: var(--primary-color);
+    }
+
+    .frame-box {
+      width: 100%;
+      height: 720px;
+      border: 1px solid var(--border-color);
+      border-radius: 8px;
+      background: #fafafa;
+      position: relative;
+    }
+
+    .frame-box iframe {
+      width: 100%;
+      height: 100%;
+      border: none;
+    }
+
+    /* Grid Modules Section */
+    .module-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 15px;
+      margin-top: 35px;
+    }
+
+    .module-card {
+      background: #fff;
+      border: 1px solid var(--border-color);
+      border-radius: 8px;
+      padding: 15px;
+      cursor: pointer;
+      transition: transform 0.2s, box-shadow 0.2s;
+    }
+
+    .module-card:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+      border-color: var(--secondary-color);
+    }
+
+    .module-card h5 {
+      color: var(--primary-color);
+      margin-bottom: 6px;
+      font-size: 15px;
+    }
+
+    .module-card p {
+      font-size: 12px;
+      color: var(--text-muted);
+    }
+
+    /* Footer */
+    footer {
+      background: #111e2e;
+      color: #cfd8dc;
+      padding: 40px 20px 20px;
+      margin-top: 50px;
+      font-size: 13px;
+    }
+
+    .footer-grid {
+      max-width: 1300px;
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 30px;
+    }
+
+    .footer-col h4 {
+      color: #fff;
+      margin-bottom: 15px;
+      font-size: 15px;
+    }
+
+    .footer-col ul {
+      list-style: none;
+    }
+
+    .footer-col ul li {
+      margin-bottom: 8px;
+    }
+
+    .footer-col ul a {
+      color: #90a4ae;
+      text-decoration: none;
+    }
+
+    .footer-bottom {
+      max-width: 1300px;
+      margin: 30px auto 0;
+      padding-top: 20px;
+      border-top: 1px solid #263238;
+      text-align: center;
+      font-size: 12px;
+    }
+
+    @media (max-width: 768px) {
+      .main-nav { display: none; }
+      .frame-box { height: 600px; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Top Contact Details -->
+  <div class="top-bar">
+    <div>
+      <span><i class="fa fa-envelope"></i> care@edwinepc.com</span> | 
+      <span><i class="fa fa-phone"></i> +91 6262752168</span> | 
+      <span>+91 11-45421382</span>
+    </div>
+    <div>Edwin Incorporation | Academic Services</div>
+  </div>
+
+  <!-- Header -->
+  <header>
+    <div class="nav-container">
+      <div class="logo-area">
+        <h1>Edwin Incorporation</h1>
+        <span>Services for Academicians || Universities || Colleges || Journals</span>
+      </div>
+      <ul class="main-nav">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Academicians</a></li>
+        <li><a href="#">R&D/EBI</a></li>
+        <li><a href="#">Educational</a></li>
+        <li><a href="#">University/College</a></li>
+        <li><a href="#">Pay Now</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <!-- Banner / Summary -->
+  <section class="hero">
+    <h2>Edwin Incorporation CRM - Data Entry Work</h2>
+    <p>Facebook Data Leads, Conference Data Leads, Journals Data Leads, and multiple CRM based service forms in one unified dashboard.</p>
+    
+    <div class="metrics">
+      <div class="badge">
+        <strong>14+</strong>
+        <span>CRM Forms</span>
+      </div>
+      <div class="badge">
+        <strong>8</strong>
+        <span>Main Services</span>
+      </div>
+      <div class="badge">
+        <strong>6</strong>
+        <span>Quick Modules</span>
+      </div>
+      <div class="badge">
+        <strong>Live</strong>
+        <span>Zoho Forms</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- Main Functional Layout -->
+  <main class="wrapper">
+    <div class="tabs-header">
+      <h3>Select Service Module</h3>
+      <div class="tab-list">
+        <button class="tab-item active" onclick="switchForm('academic', this)">Academicians Serv</button>
+        <button class="tab-item" onclick="switchForm('ngo', this)">NGO Serv</button>
+        <button class="tab-item" onclick="switchForm('city', this)">Local City Ser</button>
+        <button class="tab-item" onclick="switchForm('business', this)">Business Ser</button>
+        <button class="tab-item" onclick="switchForm('university', this)">University Serv</button>
+        <button class="tab-item" onclick="switchForm('editor', this)">Editor Serv</button>
+        <button class="tab-item" onclick="switchForm('phd', this)">PhD Student Serv</button>
+        <button class="tab-item" onclick="switchForm('admission', this)">Admission Student Serv</button>
+      </div>
+    </div>
+
+    <!-- Active Form Viewport -->
+    <section class="crm-section">
+      <div class="crm-header">
+        <h4 id="current-form-name">Academician DEO Form</h4>
+        <span style="font-size: 13px; color: var(--text-muted);">Connected via Secure Zoho Portal</span>
+      </div>
+      
+      <div class="frame-box">
+        <!-- Default Embedded Zoho Form Frame -->
+        <iframe id="deo-iframe" src="https://forms.zohopublic.com" title="Lead Entry Window"></iframe>
+      </div>
+    </section>
+
+    <!-- Quick Shortcuts Grid -->
+    <div class="module-grid">
+      <div class="module-card" onclick="switchForm('gem', null)">
+        <h5>GEM Entries</h5>
+        <p>GEM bids and supplier data entry</p>
+      </div>
+      <div class="module-card" onclick="switchForm('facebook', null)">
+        <h5>Facebook Leads</h5>
+        <p>FB ad campaign entry form</p>
+      </div>
+      <div class="module-card" onclick="switchForm('call', null)">
+        <h5>Call Leads</h5>
+        <p>Inbound & outbound call records</p>
+      </div>
+      <div class="module-card" onclick="switchForm('justdial', null)">
+        <h5>Just Dial Leads</h5>
+        <p>Vendor & inquiry listing update</p>
+      </div>
+      <div class="module-card" onclick="switchForm('properties', null)">
+        <h5>Properties Details</h5>
+        <p>Real estate & asset registry</p>
+      </div>
+      <div class="module-card" onclick="switchForm('vendors', null)">
+        <h5>Vendor Entries</h5>
+        <p>Merchant onboarding records</p>
+      </div>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <div class="footer-grid">
+      <div class="footer-col">
+        <h4>Edwin Incorporation</h4>
+        <p>A global platform offering Research Publication Services, DOI/ISSN guidance, and patent support with academic consultancy worldwide.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="#">About Us</a></li>
+          <li><a href="#">Apply for Jobs</a></li>
+          <li><a href="#">Partnership Programme</a></li>
+          <li><a href="#">Privacy Policy</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Our Services</h4>
+        <ul>
+          <li><a href="#">Research Paper Publishing</a></li>
+          <li><a href="#">R&D / EBI Support</a></li>
+          <li><a href="#">University & College Ties</a></li>
+          <li><a href="#">Edwin Journal Network</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Contact Us</h4>
+        <p>40-41, Lower Ground Floor (LGF) Bakshi House, Nehru Place, New Delhi, Delhi 110019</p>
+        <p>Email: care@edwinepc.com</p>
+        <p>Phone: +91 6262752168</p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      &copy; 2026 Edwin Incorporation. All Rights Reserved.
+    </div>
+  </footer>
+
+  <!-- Script for Switching Forms -->
+  <script>
+    // Form URLs Map (Apne real zoho form links yahan dal sakte hain)
+    const formsDatabase = {
+      academic: { title: "Academician DEO Form", url: "https://forms.zohopublic.com" },
+      ngo: { title: "NGO Lead Entry Form", url: "https://forms.zohopublic.com" },
+      city: { title: "Local City Lead Form", url: "https://forms.zohopublic.com" },
+      business: { title: "Business DEO Form", url: "https://forms.zohopublic.com" },
+      university: { title: "University Lead Form", url: "https://forms.zohopublic.com" },
+      editor: { title: "Journal Editor Data Form", url: "https://forms.zohopublic.com" },
+      phd: { title: "PhD Student Services Form", url: "https://forms.zohopublic.com" },
+      admission: { title: "Admission Lead Entry Form", url: "https://forms.zohopublic.com" },
+      gem: { title: "GEM Bid & Tender Entry", url: "https://forms.zohopublic.com" },
+      facebook: { title: "Facebook Ad Leads Module", url: "https://forms.zohopublic.com" },
+      call: { title: "Call Center Inbound Leads", url: "https://forms.zohopublic.com" },
+      justdial: { title: "JustDial Inquiries Register", url: "https://forms.zohopublic.com" },
+      properties: { title: "Properties Portfolio Management", url: "https://forms.zohopublic.com" },
+      vendors: { title: "Vendor Onboarding Portal", url: "https://forms.zohopublic.com" }
+    };
+
+    function switchForm(key, element) {
+      if (!formsDatabase[key]) return;
+
+      // Update Active Tab Class
+      if (element) {
+        document.querySelectorAll('.tab-item').forEach(tab => tab.classList.remove('active'));
+        element.classList.add('active');
+      }
+
+      // Update Form Heading and Frame Link
+      document.getElementById('current-form-name').innerText = formsDatabase[key].title;
+      document.getElementById('deo-iframe').src = formsDatabase[key].url;
+      
+      // Smooth scroll back to form viewport if card clicked
+      if (!element) {
+        document.querySelector('.crm-section').scrollIntoView({ behavior: 'smooth' });
+      }
+    }
+  </script>
+</body>
+</html>
